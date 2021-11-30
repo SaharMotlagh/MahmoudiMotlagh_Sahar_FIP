@@ -16,11 +16,6 @@ Tags: Learning HTML
   Plugins
 -------------*/
 
-/* ___________________________________________
-
-       CSS Guide
-___________________________________________ */
-
 /* 01. General Styles                        
    02.                             
 /* _____________________________________
@@ -32,3 +27,63 @@ ___________________________________________ */
     display: none;
 }
 
+  .box-model {
+    margin: 1rem;
+    padding: 1rem;
+    background: #000;
+  }
+
+  section {
+    margin: 3rem 0;
+  }
+
+  body {
+    /*background-color: azure;*/
+    margin: 0px auto;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16pt;
+}
+
+  h2 {
+    margin: 0px auto;
+    padding: 1em;
+  }
+
+  h3 {
+    margin: 0px auto;
+    padding: ;
+    font size: ;
+    font font-weight: ;
+    border-bottom: 1px solid #b64a40;
+  }
+
+  h4 { 
+    margin: 0px auto;
+    padding: ;
+  }
+  /* ___________________________________________
+
+       CSS Guide
+___________________________________________ */
+  
+@supports (grid-area: auto) {
+
+  .site {
+    max-width: none;
+  }
+
+  /*---- Grid Items -----*/
+
+  .head, .main > *, .foot {
+    display: grid;
+    grid-template-columns: 1fr repeat(2,minmax(auto,30 em)) 1fr;
+  }
+
+/* _____________________________________
+
+   01. box model
+   _____________________________________ */
+
+  }
