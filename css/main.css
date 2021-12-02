@@ -33,8 +33,32 @@ Tags: Learning HTML
     background: #000;
   }
 
+  .blue-box {
+    display: grid;
+    grid-template-columns: 1fr repeat(2,minmax(auto,30em)) 1fr;
+    margin: 0;
+    padding: 0;
+    background-color: coral;
+    width: 100%;
+    height: 10em;
+  }
+
+  /*.about-item { 
+    margin: 160px;
+    padding: 160px ;
+  } */
+
+  /*div {
+    display: block;
+  }*/
+
   section {
     margin: 3rem 0;
+  }
+
+  .spacer {
+    margin: .5em;
+  
   }
 
   body {
@@ -46,22 +70,33 @@ Tags: Learning HTML
     font-size: 16pt;
 }
 
+  p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    color: rgb(9, 155, 155);
+  }
+
   h2 {
     margin: 0px auto;
-    padding: 1em;
+    padding: 0em;
   }
 
   h3 {
     margin: 0px auto;
-    padding: ;
+    padding: 0;
     font size: ;
     font font-weight: ;
     border-bottom: 1px solid #b64a40;
+    color: blueviolet;
   }
 
   h4 { 
     margin: 0px auto;
-    padding: ;
+    padding: 0;
+    color: coral;
   }
   /* ___________________________________________
 
@@ -76,10 +111,116 @@ ___________________________________________ */
 
   /*---- Grid Items -----*/
 
-  .head, .main > *, .foot {
+  .head, .main > *, .foot > * {
     display: grid;
-    grid-template-columns: 1fr repeat(2,minmax(auto,30 em)) 1fr;
+    grid-template-columns: 1fr repeat(2,minmax(auto,30em)) 1fr;
   }
+
+
+  .one-item {
+    display: grid;
+    grid-column: 2 / span 2;
+    grid-template-columns: 1fr;
+}
+
+  .one-item-left {
+    display: grid;
+    grid-column: 2 / span 1;
+    grid-template-columns: 1fr;
+  }
+
+  .one-item-right {
+    display: grid;
+    grid-column: 3 / span 1;
+    grid-template-columns: 1fr;
+    margin: 0;
+    padding: 0;
+  }
+
+  .two-items {
+    display: grid;
+    grid-column: 2 / span 2;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-evenly;
+    row-gap: 2em;
+    column-gap: 2em;
+ }
+
+  .three-items {
+    display: grid;
+    grid-column: 2 / span 2;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
+  }
+
+  .four-items {
+
+  }
+
+
+  /*---- End Grid Items -----*/
+
+  /*---- Site Header -----*/
+
+  .logo {
+    grid-column: 1 / span 1; /*fist number is what grid number to start at, the second one is how far to span */
+  }
+
+  .nav {
+    grid-column: 2 / span 3;
+  }
+
+  /*---- End Site Header -----*/
+
+  /*------Start Hero------*/
+
+  .hero {
+    margin: 0 0;
+  }
+
+  .hero-img img {
+    width: 100%;
+  }
+
+  .hero-img {
+    display: grid;
+    grid-column: span 4;
+    margin-bottom: 1rem;
+  }
+
+  .hero-img > * {
+    grid-column: 1;
+    grid-row: 1;
+  
+  }
+
+  .hero-img h3 {
+    margin: 100px 31px auto 165px;
+  }
+
+  .hero-img form {
+    margin: 150px 31px auto 165px;
+    padding: 10px 10px 20px 30px;
+    
+
+  }
+
+  /*.hero-img h3.right  {
+    align-self: flex-end;
+    justify-self: end;
+    margin-left: 9em;
+    
+  } */
+  
+
+
+
+
+
+
+
+  /*------End Hero------*/
+
 
 /* _____________________________________
 

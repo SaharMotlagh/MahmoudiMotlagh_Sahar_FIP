@@ -3,31 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <title>Saffron Food</title>
 </head>
 <body class="site">
-    <h1 class="hidden">Saffron Food Brunch Page</h1>
+    <h1 class="hidden">saffron food</h1>
     <a class="hidden" href="#content">skip content</a>
     <header class="head">
-        <nav aria-label="Menu Categories">
-            <h3 class="hidden">Menu Categories</h3>
+        <div class="logo box-model"><img src="images/saffron-logo.png" alt="logo"></div>
+        <nav class="nav box-model" aria-label="Menu Categories">
+            <h2 class="hidden">Menu Categories</h2>
             <ul>
                 <li><a href="file:///D:/IMD/1052/MahmoudiMotlagh_Sahar_midterm/Saffron%20_Food_Home_Page.html" target="blank">Home</a></li>
                 <li>Brunch</li>
+                <li>Lunch</li>
+                <li>Snack</li>
+                <li>Dinner</li>
                 <li><a href="file:///D:/IMD/1052/MahmoudiMotlagh_Sahar_midterm/saffron_food_contact_page.html" target="blank">Contact</a></li>
-                <li><h4>Order Now</h4></li>
+                <li><h3>Order Now</h3></li>
             </ul>
         </nav>
     </header>
     <main id="content" class="main">
-        <section>
+        <section class="hero">
+            <div class="hero-img">
             <h2 class="hidden">creating and ordering food</h2>
-            <img src="image/bread_tomato_cucomber_wide_image.jpg"
+            <img src="images/bered-cucumber-tomato-lemon-img.jpg"
              alt="breakfast with bread,tomato and cucomber">
              <h3>Create Your Own Brunch</h3>
             <form action="text.php" method="get" enctype="text/plain">
@@ -37,8 +42,13 @@
                 <input type="text" name="Ingredient"><br><br>
                 <input type="submit" name="submite" value="Order Your Exciting Brunch">
             </form>
+            </div>
+            </section>
             <!-- COLUMN 1 -->
-                <h4>Fresh Bread</h4>
+            <section class="about-food">
+            <div class="two-items">
+               <div class="box-model">
+                <h2>Fresh Bread</h2>
                 <p>
                     We are proud that have been <br>
                     serving fresh and warm bread for <br>
@@ -48,70 +58,108 @@
                     <a href="#">Click here</a> to have fresh bread at <br>
                     your place.
                 </p>
+                </div> 
                 <!-- COLUMN 2 -->
-                <img src="image/bread_suare_image.jpg" alt="bread in the basket">
-        </section>
-        <section>
-            <h2 class="hidden">promotion offer</h2>
-            <p>
-                Insert your promotion code and have your order today.
-           </p>
-        <form action="text" method="post" enctype="text/plain">
-            <input type="text" name="Promotion Code" placeholder="Promotion Code"><br>
-            <input type="submit" name="submit" value="send">
-        </form>
+                <div class="box-model">
+                <img src="images/fresh_bread_loaf_image.jpg" width="396" height="409" alt="bread in the basket">
+                </div>
+                </div>
+            </section>
+        <section class="blue-box">
+            <div class="one-item">
+                <h2 class="hidden">contact section</h2>
+                    <h3>Insert your promotion code and have your order today.</h3><br>
+                    <form action="text" method="post" enctype="text/plain">
+                        <input type="text" name="Promotion Code" placeholder="Promotion Code"><br>
+                        <input type="submit" name="submit" value="send">
+                    </form>
+            </div>  
+       </section>
         <!-- COLUMN 1 -->
-        <h3>Hi Bye Crepe</h3>
-            <p>
-            This combo crepe has made with<br>
-            local ingredients.<br>
-            Scrambled egg and bacon will go<br>
-            with this combo crepe.<br>
-            This crepe also be refreshed by<br>
-            free fries on Sundays. <a href="#">Click here</a><br>
-            to order combo crepe. 
-        </p>
+        <section class="about-food">
+            <div class="two-items">
+                <div class="box-model">
+                    <img src="images/crep-img.jpg" alt="crepe plate">
+                </div>
+                
         <!-- COLUMN 2 -->
-        <img src="image/crepe_site_image.jpg" alt="crepe plate">
+        <div class="box-model">
+            <h3>Hi Bye Crepe</h3>
+                <p>
+                This combo crepe has made with<br>
+                local ingredients.<br>
+                Scrambled egg and bacon will go<br>
+                with this combo crepe.<br>
+                This crepe also be refreshed by<br>
+                free fries on Sundays. <a href="#">Click here</a><br>
+                to order combo crepe. 
+            </p>
+        </div>
+    </div>
+        </section>
+        <section class="hero">
+            <div class="hero-img">
+                <img src="images/junk-food-ai.png" alt="junk-foo-illustration">
+            </div>
         </section>
         <section>
-            <h2 class="hidden">herbal tea</h2>
-            <img src="image/pattern_illustration_wide-01-01.jpg" alt="pattern">
+            <div class="two-items">
+                <div class="box-model">
             <!-- COLUMN 1 -->
             <h3>Herbal Tea</h3>
             <p>Let’s start our day by different taste<br>
                 like herbal tea. Click here to order<br>
                 magical herbal tea.<br>
             </p>
+            </div>
             <!-- COLUMN 2 -->
-            <img src="image/grean_tea_lemon_image_edited.jpg" alt="grean tee">
+            <div class="box-model">
+            <img src="images/herbal-tea.jpg" width="388" height="530" alt="grean tee">
+        </div>
+    </div>
         </section>
     </main>
     <footer class="foot">
         <section>
             <h2 class="hidden">Saffron Food site footer</h2>
-            <h3 class="hidden"> Saffron Food address</h3>
-         <p>
-            London, Ontario Canada 
-        </p>
-        <h3 class="hidden">contact info</h3>
-        <p>
-            Toll Free: +1 555-555-5555 <br>
-            Fax: +1 555-555-5555 <br>
-            Email: info@Saffronfood.ca
-        </p>
-        <nav aria-label="Footer Navigation">
-            <h3 class="hidden">Footer Nav</h3>
-            <ul>
-                <li><a href="file:///D:/IMD/1052/MahmoudiMotlagh_Sahar_midterm/Saffron%20_Food_Home_Page.html" target="blank">Home</a></li>
-                <li><a href="file:///D:/IMD/1052/MahmoudiMotlagh_Sahar_midterm/saffron_food_brunch_page.html">Brunch</a></li>
-                <li><a href="file:///D:/IMD/1052/MahmoudiMotlagh_Sahar_midterm/saffron_food_contact_page.html" target="blank">Contact</a></li>
-            </ul>
-        </nav>
-        <p>
-            All prices and services on this website and in our reservation system are based on conditions at the time of publishing and are subject to change. Please call to confirm services, availability and pricing.  ©2013 Couples Resort Inc. All Rights Reserved. Privacy Policy  
-        </p>
-    </section>
-</footer>
+            <div class="two-items">
+            <nav>
+                <h2 class="box-model">footer nav</h2>
+                <ul>
+                    <li><a href="file:///D:/IMD/1052/MahmoudiMotlagh_Sahar_midterm/Saffron%20_Food_Home_Page.html" target="blank">Home</a></li>
+                    <li>Brunch</li>
+                    <li>Lunch</li>
+                    <li>Snack</li>
+                    <li>Dinner</li>
+                    <li><a href="file:///D:/IMD/1052/MahmoudiMotlagh_Sahar_midterm/saffron_food_brunch_page.html">Brunch</a></li>
+                    <li><a href="file:///D:/IMD/1052/MahmoudiMotlagh_Sahar_midterm/saffron_food_contact_page.html" target="blank">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="box-model">
+                <h3>company logo</h4>
+                <p>add</p>
+                <h3>subtitle</h3>
+                <p>contact info</p>
+            </div>
+    </div>
+    <div class="one-item">
+        <p class="box-model" >All prices and services on this website and in our reservation system are based on conditions at the time of publishing and are subject to change. Please call to confirm services, availability and pricing.  ©2013 Couples Resort Inc. All Rights Reserved. Privacy Policy</p>
+    </div>
+        </section>
+    </footer>
+
+    <p>
+        London, Ontario Canada 
+    </p>
+    <h3 class="hidden">contact info</h3>
+    <p>
+        Toll Free: +1 555-555-5555 <br>
+        Fax: +1 555-555-5555 <br>
+        Email: info@Saffronfood.ca
+    </p>
+    <nav aria-label="Footer Navigation">
+        <h3 class="hidden">Footer Nav</h3>
+        
+    </nav>
 </body>
 </html>
