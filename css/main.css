@@ -85,6 +85,8 @@ Accessibility
   /*div {
     display: block;
   } */
+ 
+  /*-------------- start reset--------------*/
 
   section {
     margin: 3rem 0;
@@ -102,7 +104,19 @@ Accessibility
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 16pt;
-}
+    background-image: url("../images/bc-brunch-page-01.png");
+    color: #fff;
+  }
+
+  body label {
+    color: #252525;
+  }
+
+  input, textarea {
+    display:block;
+    margin: 0;
+    padding: 0;
+  }
 
   p {
     display: block;
@@ -124,10 +138,10 @@ Accessibility
   h5 {
     margin: 0px auto;
     padding: 0;
-    font-size: 36px;
+    font-size: 40px;
     font-weight: lighter;
     /*border-bottom: 1px solid #b64a40;*/
-    color: #252525;
+    color: #fff;
   }
 
   h4 { 
@@ -141,6 +155,31 @@ Accessibility
     border-bottom: solid #c53f36 1px;
   }
 
+  h7 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0px auto;
+    padding: 0;
+    color: #c53f36;
+    text-align: left;
+    text-align-last: left;
+    border-bottom: solid #c53f36 1px;
+
+  }
+
+  h8 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0px auto;
+    padding: 0;
+    color: #c53f36;
+    text-align: left;
+    text-align-last: left;
+    border-bottom: solid #c53f36 1px;
+
+  }
+
+    /*-------------- end reset--------------*/
 
   /* ___________________________________________
 
@@ -186,6 +225,10 @@ ___________________________________________ */
 
   .margin-bottom-4 {
     margin-bottom: 109px;
+  }
+
+  .margin-bottom-5 {
+    margin-bottom: 10px;
   }
 
   .margin-top-4 {
@@ -262,10 +305,6 @@ ___________________________________________ */
   .f-right {
     float: right;
   }
-  
-
-  
-
 
   /*---- End Grid Items -----*/
 
@@ -275,9 +314,15 @@ ___________________________________________ */
     grid-column: 1 / span 1; /*fist number is what grid number to start at, the second one is how far to span */
   }
 
+  .footer img {
+    padding: 0;
+    margin-left: 300px;
+    width: 90%;
+  }
+
   .logo img {
     padding: 0;
-    margin-left: 50px;
+    margin-left: 0px;
     width: 90%;
     /*margin-top: 3em;*/
   }
@@ -286,6 +331,29 @@ ___________________________________________ */
     display: grid;
     grid-template-columns: 1fr repeat(2,minmax(auto,30em)) 1fr;
   }
+
+  input, textarea {
+    padding: .75em;
+    border: 1px solid #ccc;
+    background-color: #a2d2d1;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    text-align: center;
+    float: unset;
+  }
+
+  input[type="submit"] {
+    width: inherit;
+    padding: 1em 2em;
+    background-color: #a2d2d1;
+    color: #252525;
+    border: none;
+    float: left;
+    border-radius: 30px;
+    font-size: 20px;
+    text-align: center;
+ }
+ 
 
 /*----------------- Site Nav ----------------------*/
 
@@ -296,11 +364,24 @@ ___________________________________________ */
     border-bottom: 1px solid #a2d2d1;
     box-shadow: 0px 5px 8px #a2d2d1;
   }
+   
+  .center {
+    text-align: center;
+  }
+  .displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+  }
 
   .nav {
     grid-column: 2 / span 3;
     padding-top: 1.5em;
     margin: 0;
+  }
+
+  .footer-copy {
+    grid-column: 2 / span 23;
   }
 
   nav ul {
@@ -365,11 +446,11 @@ ___________________________________________ */
   main section form {
     margin-bottom: 10px;
     padding-top: 0px;
-    padding-bottom: 30px;
+    /*padding-bottom: 30px;
     padding-left: 38px;
-    padding-right: 51px;
-    opacity: 80%;
-    background-color: #ffffff;
+    padding-right: 51px;*/
+    /*opacity: 80%;
+    background-color: #ffffff;*/
   }
 
   main section form input {
@@ -436,11 +517,9 @@ ___________________________________________ */
   /*------------start promotion----------------*/
 
   .blue-box {
-    background-color: #a2d2d1;
+    background-color: #c53f36;
     padding: 4em 0em 6em 0em;
   }
-
-
 
   /*.blue-box {
     display: grid;
@@ -453,6 +532,32 @@ ___________________________________________ */
     height: 364px;
   }*/
 
+  /*------------End promotion----------------*/
+
+
+  /*------------form----------------*/
+
+  form label {
+    color: #c53f36;
+  }
+
+
+  /*------------ start creating brunch ------------*/
+
+  /*.creating {
+    color: #fff;
+    margin-bottom: 1em;
+  }*/
+
+  /*.creating form {
+    background-color: #fff;
+    padding: .5em;
+    opacity: 80%;
+    grid-column: 2 / span 1;
+    grid-template-columns: 1fr;
+  }*/
+
+  /*------------ end creating brunch ------------*/
 
 
   /*------------ free ------------*/
@@ -542,7 +647,35 @@ ___________________________________________ */
   
 
 /*------------end free------------*/
-  
+
+
+/*------------start footer------------*/
+
+footer {
+  background-color: #d1f5f3;
+  color: #252525;
+}
+
+.copyright {
+  font-size: .75em;
+  text-align: center;
+  grid-column: 1 / span 2;
+}
+
+
+footer nav a {
+  display: block;
+  font-weight: 100;
+  color: inherit;
+  text-decoration: none;
+}
+
+footer nav a:hover {
+  color: #c53f36;
+}
+
+/*------------end footer------------*/
+
 
 /* _____________________________________
 
