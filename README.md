@@ -5,11 +5,11 @@ Saffron Food is an international restaurant which has provided so many branches 
 
 # Order
 
-Lets get Started:
+Let's get Started:
 
 + Insert the food that you are interested in and then press the Enter bottom.
 + Always can order by click on order now. 
-+ Lets get in touch with the restaurant by the contact page.
++ Let's get in touch with the restaurant by the contact page.
 
 ## Contributing
 
@@ -23,7 +23,7 @@ Lets get Started:
 
 Lets get Started:
 
-+ All the photos are taken by me, although logo is desiggned by me.
++ All the photos are taken by me, although logo is designed by me.
 + junkfood Illustration is from Freepik.
 
 ## License
